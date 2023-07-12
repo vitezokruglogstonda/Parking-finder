@@ -1,0 +1,296 @@
+body{
+    display: flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, #00308F,#0066b2,#6CB4EE, lightblue,azure);
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label{
+    text-align: center;
+    line-height: 3.5;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.enterCodeLabel{
+    width: 30%;
+    color: #e25822;
+    position: relative;
+    left: 8%;
+    top: 17%;
+}
+
+input{
+    width: 77%;
+    height: 25%;
+    position: relative; 
+    left: 10%;
+    top: 20%;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #e25822;
+    text-align: center;
+    line-height: 3.5;
+    font-weight: 600;
+    font-size: 200%;
+    color: black;
+    border:none;
+    outline-width: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    text-align: center;
+    line-height: 2.5;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:#c0c0c0;
+    position: relative;
+    left: 46%;
+}
+
+.popupText{
+    position: relative;
+    left: 0%;
+    color: black;
+}
+
+.footer{
+    display: flex;    
+    background-color: #696969;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+    width:100%;
+    height: 40px;    
+    align-content: center;
+    align-items: center;
+}
+
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    top: 0;
+}
+
+.centerDiv{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.optionsDiv{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    order: 1;
+}
+
+.tabsDiv{        
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 10px;
+    align-items: flex-end;
+}
+
+.hrLine{
+    width: 100%;
+    height: 4px;
+    background-color: #c0c0c0;
+    border-width: 0px;
+    border-radius: 10px;
+}
+
+.tab{
+    height: 50px;
+    width: 150px;
+    background-color: #708090;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    line-height: 3.5;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#c0c0c0;
+}
+
+.selectedTab{
+    background-color: #c0c0c0;
+    color: #e25822;
+    text-transform: uppercase;
+    height: 55px;
+}
+
+.contentDiv{
+    width: 100%;
+    order: 2;
+    height: 70%;
+    position: relative;
+    top: 10%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.parkingSpotBox{
+    display:flex;
+    width: 100%;
+    height: 60%;
+    background-color: #c0c0c0;
+    border-radius: 20px;
+    flex-direction: column;
+    /* justify-content: center; */    
+}
+
+.parkingSpotBoxAddition{
+    align-items: center;
+}
+
+.infoBox{
+    display: flex;
+    position:relative;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    width: 90%;
+    height: 70%;
+    background-color: #708090;
+    border-radius: 5px;
+    top: 10%;
+}
+
+button{
+    position:relative;
+    /* flex-grow: 1; */
+    width: 15%;
+    height: 10%;
+    top: 20%;
+    border-width: 0px;
+    background-color: #e25822;
+    color: white;
+    border-radius: 5px;
+}
+
+.filterDiv{
+    display:flex;
+    align-items: center;
+}
+
+.selectLabel{
+    color:#c0c0c0;
+    line-height: 3.5;
+    font-weight: 600;
+    font-size: 130%;
+}
+
+.selectCity{    
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #e25822;
+    text-align: center;
+    line-height: 3.5;
+    font-weight: 600;
+    font-size: 150%;
+    border:none;
+    outline-width: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 50%;
+    position: relative;
+    left: 2%;
+}
+
+.infoLabel{
+    color: white;
+    flex-grow: 1;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoLabelPenalty{
+    color: #e25822;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#remainingTimeLabel{
+    width: 100%;
+}
+
+#mapDiv{
+    height: 70%;
+    width: 100%;
+}
+
+.loaderContainer{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    border: 16px solid #c0c0c0;
+    border-radius: 50%;
+    border-top: 16px solid #e25822;
+    animation: spin 2s linear infinite;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mapDiv{
+    border-radius: 5px;
+}
+
+.mapboxgl-marker {
+    height: 10px;
+    width: 10px;
+    z-index: 5;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #e25822;
+}
+
+.mapboxgl-marker.parking {
+    height: 10px;
+    width: 10px;
+    z-index: 5;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #89CFF0;
+    cursor: pointer;
+}
+
+.popup{
+    max-width: 300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mapboxgl-popup-content {
+    position: relative;
+    background: rgb(88, 125, 206);
+    opacity: 0.8;
+    border-radius: 5px;
+}
